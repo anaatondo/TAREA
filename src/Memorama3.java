@@ -6,7 +6,7 @@ import java.util.*;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Memorama2 extends Frame implements MouseListener,MouseMotionListener{
+public class Memorama3 extends Frame implements MouseListener,MouseMotionListener{
 		
 	private boolean arriba[][];
 	private final int CX=100;
@@ -64,7 +64,7 @@ public class Memorama2 extends Frame implements MouseListener,MouseMotionListene
 	private int segundos;
 	private boolean pausa=false;
 			
-	  public Memorama2()
+	  public Memorama3()
 	  { 
     	 
         int i,j,k,l;
@@ -109,7 +109,7 @@ public class Memorama2 extends Frame implements MouseListener,MouseMotionListene
     	imagen18=new ImageIcon("18.jpg");
     	
     	timer = new Timer();
-		segundos = 200;
+		segundos = 100;
 		timer.schedule(new again(),0, 1*1000);
 			
 	    
@@ -305,5 +305,3 @@ class again extends TimerTask {
 }
 	
 }
-
-
